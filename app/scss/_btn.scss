@@ -1,0 +1,76 @@
+.btn_round {
+    width: fit-content;
+    padding: 20px 70px;
+    border: 1px solid #fff;
+    border-radius: 90px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background: $accent;
+    color: #fff;
+    transition: .3s;
+
+    &:hover {
+        background: $accent-hover;
+    }
+}
+
+.btn_round._transparent {
+    width: fit-content;
+    padding: 13px 30px;
+    border: 1px solid $accent;
+    border-radius: 90px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    background: transparent;
+    color: #000;
+
+    &:hover {
+        color: #fff;
+        background: $accent;
+        border-color: $accent;
+    }
+}
+
+.btn {
+    font-family: 'Montserrat';
+    background-color: $accent;
+    border: none;
+    border-radius: 6px;
+    padding: 20px;
+    color: #fff;
+    width: fit-content;
+    position: relative;
+    transition: .3s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 19px;        
+    }
+
+    &:hover {
+        background-color: $accent-hover;
+    }
+}
+
+.btn._gray {
+    background-color: #EBEBEB;
+    color: $accent;
+    padding: 10px 30px 10px 45px;
+    margin-bottom: 24px;
+
+    &::before {
+        background: url('../images/arrow-back.svg') no-repeat;
+        top: 16px;
+        left: 20px;
+    }
+}
+.btn._basket {
+    padding-left: 50px;
+    &::before {
+        left: 19px;
+        width: 22px;
+        background: url('../images/basket.svg') no-repeat left;           
+    }
+}

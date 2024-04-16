@@ -1,0 +1,152 @@
+.footer {
+    background: #313131;
+    padding-top: calc(30px + 50 * (100vw / 1200));
+    padding-bottom: calc(30px + 50 * (100vw / 1200));
+    color: #fff;
+    font-size: 16px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: calc(4px + 20 * (100vw / 1200));
+        row-gap: calc(10px + 20 * (100vw / 1200));
+        position: relative;
+    }
+}
+
+.footer__title {
+    grid-column: 2/-1;
+    font-size: clamp(25px, 7vw, 47px);
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+
+    span {
+        font-size: clamp(20px, 7vw, 51px);
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.footer__menu {
+    li {
+        margin-bottom: 14px;
+        transition: .3s;
+
+        &:hover {
+            color: #c0bfbf;
+        }
+    }
+}
+
+.map {
+    grid-column: 2/-2;
+    transform: translateY(6px);
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    max-width: 500px;
+}
+
+.address {
+    display: flex;
+    gap: 10px;
+
+    &:hover svg {
+        animation: jump .3s linear 2;
+    }
+}
+
+.footer .phone-link {
+    font-size: 26px;
+    font-weight: 700;
+    gap: 10px;
+    color: #fff;    
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    svg:hover circle {
+        fill: #000;
+    }
+
+    svg:hover path {
+        fill: #fff;
+    }
+}
+
+.footer__form {
+    .form-input {
+        padding: 11px 12px;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+}
+
+.footer .btn {
+    width: 100%;
+    padding-left: 50px;
+
+    &::before {
+        height: 22px;
+        background: url('../images/earphones.svg') no-repeat center;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+}
+
+.robonet-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+}
+
+@media (max-width: 1063px) {
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__title {
+        text-align: center;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        li {
+            width: 90%;
+            border-bottom: 1px solid #646464;
+            margin-bottom: 11px;
+            padding-bottom: 17px;
+            text-align: center;
+        }
+    }
+
+    .footer .phone-link {
+        font-weight: 600;
+    }
+    
+    .robonet-wrapper {
+        position: static;
+        padding-top: 25px;  
+        width: 100%;
+        border-top: 1px solid #646464;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,44 @@
+/* .YMaps-layer, .YMaps-layer-container, .YMaps-map-type-layer-container, .YMaps-tile-container {
+    width:100%
+}
+
+.YMaps-placemark {
+    position: relative;
+
+    img {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -38px;
+        left: -19px;
+        width: 60px;
+        height: 68px;
+        background: url('../images/marcer.svg');
+    }
+}
+
+.YMaps-b-balloon-tail-full,
+.YMaps-b-balloon-b,
+.YMaps-b-balloon_full .YMaps-b-balloon-mr,
+.YMaps-b-balloon_full .YMaps-b-balloon-ml,
+.YMaps-b-balloon_full .YMaps-b-balloon-shad,
+.YMaps-b-balloon-t,
+.YMaps-b-balloon-tr,
+.YMaps-b-balloon-tl {
+    display: none;
+}
+
+.YMaps-b-balloon, .YMaps-b-balloon-point, .YMaps-balloon {
+    left: -12px;
+    bottom: -49px;
+}
+
+.YMaps-b-balloon_full {
+    width: 370px;
+    height: 280px;
+    background:url('../images/balloon.svg') no-repeat center bottom;
+    background-size: cover;
+} */

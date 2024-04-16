@@ -1,0 +1,24 @@
+.breadcrumbs {
+    background-color: #F7F7F7;
+    .container {
+        padding:32px 0 29px 325px;
+        /*
+        margin-bottom: calc(5px + 30 * (100vw / 1200));
+        */
+    }
+
+    a {
+        color: #000;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1063px) {
+    .breadcrumbs {
+        .container {
+            padding: 32px 0 ;
+            text-align: center;
+        }       
+    }
+}

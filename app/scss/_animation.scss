@@ -1,0 +1,29 @@
+@keyframes calling-phone {
+    from {transform: rotate(15deg);}
+    to {transform: rotate(-15deg);}
+}
+
+@keyframes jump {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(0)}
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg) translateX();           
+    }
+    25% {
+        transform: rotate(90deg) translateX(25%);               
+    }
+    50% {
+        transform: rotate(180deg) translateX(50%);              
+    }
+
+    75% {
+        transform: rotate(270deg) translateX(75%);              
+    }
+    100% {
+        transform: rotate(360deg) translateX(100%);           
+    }
+}
